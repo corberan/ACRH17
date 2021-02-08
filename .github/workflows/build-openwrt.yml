@@ -15,15 +15,15 @@ name: Build OpenWrt ACRH17
 
 on:
   repository_dispatch:
-#  release:
-#    types: published
-#  push:
-#    branches:
-#      - master
-#    paths:
-#      - 'acrh17.config'
-  schedule:
-    - cron: 30 14 */10 * *
+  release:
+    types: published
+  push:
+    branches:
+      - master
+    paths:
+      - 'acrh17.config'
+#  schedule:
+#    - cron: 30 14 */10 * *
 #          分 时 日 月 周5
 #   - cron: 0 8 */3 * *
 #  watch:
